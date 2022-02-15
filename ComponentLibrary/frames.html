@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames/Inputs</title>
+    <link rel="stylesheet" href="Css/frames.css">
+    <script src="https://kit.fontawesome.com/80d8516d34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Vertical Active Form -->
+        <div class="active">
+            <form action="">
+                <label for="e-mail">E-mail <sup><span class="high">*</span></sup></label>
+                <input type="email" class="input-block" id="e-mail" placeholder="yourmail@mail.com" required>
+                <label for="text">Text Area <sup><span class="high">*</span></sup></label>
+                <textarea name="textarea" id="text" placeholder="Tell us more..." cols="42" rows="10"></textarea>
+            </form>
+        </div>
+        <!-- Disabled Form -->
+        <div class="active">
+            <form action="">
+                <label for="e-mail">E-mail <sup><span class="high">*</span></sup></label>
+                <input type="email" class="input-block" id="e-mail" placeholder="yourmail@mail.com" disabled>
+                <label for="text">Text <sup><span class="high">*</span></sup></label>
+                <input type="text" id="single-text" name="single-txt" placeholder="Disabled" class="input-block"
+                    disabled>
+            </form>
+        </div>
+        <!-- Basic Login Form -->
+        <div class="active">
+            <form action="">
+                <label for="e-mail">E-mail <sup><span class="high">*</span></sup></label>
+                <input type="email" name="mail" class="input-block" id="e-mail" placeholder="yourmail@mail.com"
+                    required>
+                <label for="pass">Password <sup><span class="high">*</span></sup></label>
+                <input name="password" type="password" id="pass" placeholder="Password" class="input-block" required>
+                <div class="log">
+                    <input type="checkbox" id="keep" name="logged" checked>
+                    <label for="keep" class="checked">Remember Me</label>
+                </div>
+                <input type="submit" id="send" class="input-block" value="Log In">
+                <a href="#" id="forgot">Forgot Password?</a>
+            </form>
+        </div>
+        <!--Read-Only Form -->
+        <div class="active">
+            <form action="">
+                <label for="e-mail">E-mail <sup><span class="high">*</span></sup></label>
+                <input type="email" class="input-block" id="e-mail" value="yourmail@mail.com" readonly>
+                <label for="pass">Password <sup><span class="high">*</span></sup></label>
+                <input name="password" type="password" id="pass" placeholder="Password" class="input-block" required>
+                <div class="log">
+                    <input type="checkbox" id="keep" name="logged" checked>
+                    <label for="keep" class="checked">Remember Me</label>
+                </div>
+                <input type="submit" id="send" class="input-block" value="Log In">
+                <a href="#" id="forgot">Forgot Password?</a>
+            </form>
+        </div>
+        <!--Verification Form -->
+        <div class="active">
+            <form action="">
+                <label for="fname">First Name <sup><span class="high">*</span></sup></label>
+                <input type="text" id="fname" placeholder="First Name" class="input-block" required>
+                <label for="lname">Last Name <sup><span class="high">*</span></sup></label>
+                <input type="text" id="lname" placeholder="Last Name" class="input-block" required>
+                <label for="e-mail">E-mail <sup><span class="high">*</span></sup></label>
+                <input type="email" class="input-block" id="e-mail" placeholder="yourmail@mail.com" required>
+                <label for="pass">Password <sup><span class="high">*</span></sup></label>
+                <input name="password" type="password" id="pass" placeholder="Password" class="input-block" required>
+                <label for="pass-cfr">Confirm Password <sup><span class="high">*</span></sup></label>
+                <input name="password-CFR" type="password" id="pass-cfr" placeholder="Retype-Password"
+                    class="input-block" required>
+                <label for="age">Age<sup><span class="high">*</span></sup></label>
+                <input name="Age" type="number" id="age" placeholder="Age" class="input-block" required>
+                <div class="Gender">
+                    <label>Gender<sup><span class="high">*</span></sup></label>
+                    <div class="option">
+                        <input type="radio" name="Mygender" required value="Male" id="male" checked><label
+                            for="male">Male</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="Mygender" required value="Female" id="female"><label
+                            for="female">Female</label>
+                    </div>
+                </div>
+                <input type="submit" id="send" class="input-block" value="Sign Up">
+                <a href="#" id="forgot">Registered Already? /Sign In</a>
+            </form>
+        </div>
+        <!-- Search Form -->
+        <div class="active">
+            <form action="">
+                <div class="Search">
+                    <input type="search" class="input-block" id="Search" placeholder="Search Your Favorites">
+                    <button><img src="https://bit.ly/3LqrFpB" alt="Search" class="magnify"></button>
+                </div>
+                <label for="price">Price Range <sup><span class="high">*</span></sup></label>
+                <input type="range" id="price" value="10" name="range" min="0" max="150">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

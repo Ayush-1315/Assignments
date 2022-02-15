@@ -1,0 +1,103 @@
+:root{
+    font-size:20px;
+}
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    background-color:#99A799;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height:20rem;
+    width:20rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    transition:all 0.3s;
+}
+.card:hover{
+    box-shadow: 0px 2px 3px black;
+    transform:scale(1.05);
+}
+.content{
+    height: 8rem;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.title{
+    padding:0.64rem;
+    width:90%;
+}
+.title span{
+    display:inline-block;
+    font-size: 0.9rem;
+    margin-top:0.5rem;
+    color:#ADC2A9;
+    font-weight: bold;
+}
+.title p{
+    font-size: 0.9rem;
+    margin-top:0.5rem;
+    color:#99A799;
+}
+.image{
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-image: url('../images/1.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    height:10rem;   
+}
+.frame:hover{
+    opacity:0.7;    
+    cursor:pointer;
+}
+.btn a{
+    margin:0 0.2rem;
+    color:grey;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+.btn a:hover{
+background-color: rgb(228, 228, 228);
+}
+#links a{
+    padding:0.2rem;
+    border-radius: 0.2rem;
+    margin: 0 0.5rem;
+    color:rgb(80, 19, 247); 
+
+}
+#links a:hover{
+    background-color:rgb(209, 196, 224);
+}
+.links{
+    height: 2rem;
+    display:flex;
+    flex-direction: row;
+    padding:0.4rem;
+    justify-content: space-between;  
+}
+@media only screen and (max-width:260px){
+:root{
+    font-size:13px;
+}
+}
+@media only screen and (min-width:260px)and (max-width:320px){
+:root{
+    font-size:14px;
+}
+}
+@media only screen and (min-width:320px)and (max-width:460px){
+:root{
+    font-size:15px;
+}
+}

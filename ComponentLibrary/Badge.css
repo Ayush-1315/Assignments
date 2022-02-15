@@ -1,0 +1,124 @@
+@import "Css/main.css";
+:root{
+    /* Colors  */
+     --primary-color:#420039;
+     --secondary-color:#E1DEE9 ;
+     --plain-primary:white;
+     --danger:red;
+     --success:green;
+ 
+    /* Typography */
+    --designed-font: 'Kaushan Script', cursive;
+ 
+ }
+
+ .text-badge1{
+     font-size: 1rem;
+     background: red;
+     border-radius:.5rem;
+     padding:.2rem .2rem ;
+     position: relative;
+     bottom:20px;
+ }
+
+ .text-badge2{
+    font-size: .9rem;
+    background: green;
+    border-radius:.5rem;
+    padding:.2rem .2rem ;
+    position: relative;
+    bottom:15px;
+}
+
+.text-badge3{
+    font-size: .8rem;
+    background: blue;
+    border-radius:.5rem;
+    padding:.2rem .2rem ;
+    position: relative;
+    bottom:10px;
+}
+
+.text-badge4{
+    font-size: .5rem;
+    background:yellow;
+    border-radius:.5rem;
+    padding:.2rem .2rem ;
+    position: relative;
+    bottom:5px;
+}
+
+ .badge-container{
+     height: 40px;
+ }
+
+ .badge-div{
+    min-height: 250px;
+    background: var(--secondary-color);
+    align-items: center;
+    text-align: center;
+    border-style: ridge ;
+}
+
+.offline{
+    height:18px;
+    width: 18px;
+    background: gray;
+    border-radius: 50%;
+    position: relative;
+    top:26px;
+}
+
+.online{
+    
+    background: rgb(9, 155, 9);
+    border-radius: 50%;
+    position: relative;
+    top:-18px;
+    right:20px;
+    color:green;
+    padding: 0.2rem .6rem ;
+}
+
+.in_the_call{
+    
+    background: rgb(172, 7, 7);
+    border-radius: 50%;
+    position: relative;
+    top:-14px;
+    right:15px;
+    color:rgb(172, 7, 7);
+    padding: 0.1rem .5rem ;
+}
+
+.icon-img{
+    height:50px;
+    width:60px;
+}
+
+.count{
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    padding:.1rem .2rem;
+    top:-35px;
+    right: 25px;
+}
+
+.count2{
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    padding:.1rem .2rem;
+    top:-42px;
+    right:8px;
+}
+
+.count3{
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    padding:.1rem .2rem;
+    top:-42px;
+    right: 18px;
+}

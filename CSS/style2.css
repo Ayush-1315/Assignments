@@ -1,0 +1,151 @@
+:root{
+    font-size:15px;
+}
+*{
+margin:0;
+padding:0;
+font-family: 'Nunito', sans-serif;
+text-decoration: none;
+
+}
+#nav{
+    height: 2.4rem;
+}
+.links{
+    /* padding:1rem; */
+    margin:1rem;
+}
+.links a{
+    padding:1rem;
+}
+.links a:hover{
+    background-color: red;
+}
+.links a:focus{
+    background-color: rgb(230, 29, 29);
+    border-bottom: 2px solid black;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/art.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.item{
+    height:10rem;   
+    width:32rem;
+    margin:2rem;
+    padding:2rem;   
+    border-radius: 0.5rem;
+    background-color: white;
+    flex-shrink: 4;
+    text-align: center;
+    transition:all 0.3s;
+}
+.item:hover{
+    transform:scale(1.05);
+    box-shadow:2px 2px 4px black,-2px -2px 4px black;
+}
+.btn
+{
+    display: inline-block;
+    width:9rem;
+    font-weight: bold;
+    border:none;
+    padding:0.5rem 1rem;
+    margin-left:0.4rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+    text-align: center;
+    font-size:1rem;
+}
+.btn:hover{
+    background-color:rgb(192, 191, 191);
+    cursor:pointer;
+}
+button:nth-child(2n+0):hover{
+    color:purple;
+
+}
+button:nth-child(2n+1):hover{
+    color:rgb(171, 180, 47);
+}
+#items-2 button:nth-child(2n+0):hover{
+    color:rgb(0, 13, 128);
+
+}
+#items-3 button{
+    width:11rem;
+}
+@media only screen and (max-width:260px){
+    :root{
+        font-size:8px;
+    }
+    .container{
+        flex-direction:column;  
+    }
+    }
+@media only screen and (min-width:260px) and (max-width:320px) {
+    :root{
+        font-size:10px;
+    }
+    .container{
+        flex-direction:column;  
+    }
+    }
+@media only screen and (min-width:320px) and (max-width:420px) {
+    :root{
+        font-size:10px;
+    }
+    .container{
+        flex-direction:column;  
+    }
+    }
+@media only screen and (min-width:420px) and (max-width:720px) {
+    :root{
+        font-size:11px;
+    }
+    .container{
+        flex-direction:column;  
+    }
+}
+@media only screen and (min-width:720px) and (max-width:860px) {
+    :root{
+        font-size:14px;
+    }
+    
+    .container{
+        flex-direction:column;  
+    }
+}
+@media only screen and (min-width:860px) and (max-width:950px) {
+    :root{
+        font-size:21px;
+    }
+    .container{
+        flex-direction:column;  
+    }
+    
+    }
+@media only screen and (min-width:950px) and (max-width:1090px) {
+    :root{
+        font-size:10px;
+    }
+    
+    }
+@media only screen and (min-width:1090px) and (max-width:1110px) {
+    :root{
+        font-size:11px;
+    }
+    
+    }
+@media only screen and (min-width:1110px) and (max-width:1450px) {
+    :root{
+        font-size:12px;
+    }
+    
+    }

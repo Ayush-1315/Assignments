@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap');
+
+
+@import "../Avatar.css"; 
+@import "../Badge.css";
+@import"../Alert.css";
+@import"../Button.css";
+@import"../Card.css";
+@import"../images.css";
+@import"../frames.css";
+/* @import"/ComponentLibrary/images.css"; */
+
+:root{
+   /* Colors  */
+    --primary-color:#420039;
+    --secondary-color:#E1DEE9 ;
+    --plain-primary:white;
+    --danger:red;
+    --success:green;
+
+   /* Typography */
+   --designed-font: 'Kaushan Script', cursive;
+
+}
+
+.title{
+    font-family: var(--designed-font);
+    font-size: 2rem;
+    padding: 0rem 1rem;
+    color:var(--plain-primary);
+}
+
+h3{
+    padding: 0rem;
+    margin: 0 auto;
+}
+
+body{
+    padding:0 ;
+    margin: 0px;
+    background: #fff;
+}
+
+.logo{
+    width:35px;
+    height:40px;
+}
+
+.top-navbar{
+    width:100%;
+    height:80px;
+    display: flex;
+    justify-content:space-between;
+    background-color:var(--primary-color);
+    padding: 0rem 1rem;
+    box-sizing:border-box;
+    align-items: center;
+    border-bottom: solid 10px var(--secondary-color);
+}
+
+.top-navbar-icon{
+    display:flex;
+    gap:30px;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.top-menu{
+    text-decoration: none;
+    color:var(--plain-primary);
+    font-size: 1.2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+}
+
+.sidebar{
+    width:20%;
+    height:100%;
+    background-color: var(--plain-primary);
+    position: fixed;
+    z-index: 1;
+    overflow-y:scroll;
+    top:80px;
+
+    padding: 0.5rem 0rem;
+}
+
+.components{
+    display: flex;
+    flex-flow: column wrap;
+    gap:10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top:0;
+}
+
+.side-menu{
+    text-decoration: none;
+    color:black;
+    padding: 0.2rem 1rem;
+}
+
+.side-menu:hover{
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+    padding-top:.2rem;
+}
+
+.sidebar-heading{
+    padding-right: 1rem;
+    padding-bottom: .5rem;;
+}
+
+.content{
+    padding-left: 22%;
+    font-family: 'Roboto', sans-serif;
+    margin-inline-end: 2.5%;
+}
+
+footer{
+    position: relative;
+    z-index: 1;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 0rem;
+    color:var(--plain-primary);
+}
+
+.footer-div{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+    height:100px;
+}
+
+.social-icons img{
+    width: 30px;
+    height: 30px;
+    background: white;
+}

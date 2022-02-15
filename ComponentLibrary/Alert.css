@@ -1,0 +1,107 @@
+@import "/ComponentLibrary/Css/main.css";
+:root{
+    /* Colors  */
+     --primary-color:#420039;
+     --secondary-color:#E1DEE9 ;
+     --plain-primary:white;
+     --danger:red;
+     --success:green;
+     --primary-back:skyblue;
+     --primary-text:blue;
+     --secondary-back:rgb(185, 180, 180);
+     --secondary-text: black;
+     --warning-back:rgb(248, 221, 197);
+     --warning-text:rgb(63, 47, 5);
+     --danger-back: pink;
+     --danger-text:rgb(134, 6, 6);
+     --success-back:rgb(181, 224, 241);
+     --success-text:green;
+ 
+    /* Typography */
+    --designed-font: 'Kaushan Script', cursive;
+ 
+ }
+
+ .alert-div{
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+    background: var(--secondary-color);
+    align-items: center;
+    flex-flow: column wrap;
+    border-style: ridge ;
+    gap:20px;
+    padding: 2rem .2rem;
+ }
+
+ .alert-box{
+     min-height: 2rem;
+     min-width: 80%;
+     
+     padding:.6rem .8rem;
+     text-align: left;
+     margin : auto;
+     display: flex;
+     align-items: center;
+ }
+
+ .simple-primary{
+     background:var(--primary-back);
+     color:var(--primary-text);
+ }
+
+ .simple-secondary{
+     background: var(--secondary-back);
+     color: var(--secondary-text);
+ }
+
+ .simple-warning{
+     background: var(--warning-back);
+     color:var(--warning-text);
+ }
+ .simple-danger{
+     background: var(--danger-back);
+     color:var(--danger-text);
+ }
+
+ .simple-success{
+     background: var(--success-back);
+     color:var(--success-text);
+ }
+
+ .icon-primary{
+    background:var(--primary-back);
+    color:var(--primary-text);
+}
+
+.icon-secondary{
+    background: var(--secondary-back);
+    color: var(--secondary-text);
+}
+
+.icon-warning{
+    background: var(--warning-back);
+    color:var(--warning-text);
+}
+.icon-danger{
+    background: var(--danger-back);
+    color:var(--danger-text);
+}
+
+.icon-success{
+    background: var(--success-back);
+    color:var(--success-text);
+}
+
+.dismiss :last-child {
+    padding:0;
+    background:inherit;
+    border:none;
+    color:inherit;
+    margin-left: auto;
+}
+
+.alert-box button:hover{
+    cursor:pointer;
+    color:white;
+}

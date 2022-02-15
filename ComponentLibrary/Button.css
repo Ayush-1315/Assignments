@@ -1,0 +1,129 @@
+@import "/ComponentLibrary/Css/main.css";
+:root{
+    /* Colors  */
+     --primary-color:#420039;
+     --secondary-color:#E1DEE9 ;
+     --plain-primary:white;
+     --danger:red;
+     --success:green;
+     --primary-back:skyblue;
+     --primary-text:blue;
+     --secondary-back:rgb(185, 180, 180);
+     --secondary-text: black;
+     --warning-back:rgb(248, 221, 197);
+     --warning-text:rgb(63, 47, 5);
+     --danger-back: pink;
+     --danger-text:rgb(134, 6, 6);
+     --success-back:rgb(181, 224, 241);
+     --success-text:green;
+ 
+    /* Typography */
+    --designed-font: 'Kaushan Script', cursive;
+ 
+ }
+
+.btn{
+     padding: .5rem .6rem;
+     background: rgb(8, 76, 153);
+     border:solid .2px;
+     color:var(--plain-primary);
+     border-color: blue;
+     border-radius:.4rem;
+     opacity:80%;
+ }
+
+ .btn:hover{
+     cursor:pointer;
+     opacity:100%;
+ }
+
+ .btn-primary{
+    background: transparent;
+    color:#0d6efd;
+    border: solid .2px ;
+ }
+ .btn-primary:hover{
+     background:#0d6efd;
+     color:white;
+ }
+ .btn-secondary{
+    background:transparent;
+    color:#6c757d;
+    border:solid .2px #6c757d;
+ }
+ .btn-secondary:hover{
+     background: #6c757d;
+     color:white;
+ }
+ .btn-success{
+    background:transparent;
+    color:#198754;
+    border: solid .2px #198754;
+ }
+ .btn-success:hover{
+    background:#198754 ;
+    color:white;
+ }
+ .btn-danger{
+    background:transparent;
+    color:#dc3545;
+    border: solid .2px #dc3545;
+ }
+ .btn-danger:hover{
+     background: #dc3545;
+     color:white;
+ }
+ .btn-warning{
+    background:transparent;
+    color:#ffc107;
+    border:solid .2px #ffc107;
+ }
+ .btn-warning:hover{
+     background: #ffc107;
+     color:black;
+ }
+
+ .btn-secondary:disabled{
+     background: #6c757d;
+     color:white;
+     opacity:100%;
+ }
+
+ .btn-secondary:disabled:hover{
+     pointer-events: none;
+ }
+
+ .btn-primary:disabled{
+     background:#0d6efd;
+     color:white;
+     opacity:100%;
+ }
+ 
+ .btn-primary:disabled:hover{
+     pointer-events: none;
+ }
+
+ .blockbtn-div{
+    display: flex;
+    min-height: 150px;
+    background: var(--secondary-color);
+    align-items: center;
+    flex-flow:column wrap;
+    gap:.8rem;
+    justify-content: center;
+    border-style: ridge ;
+ }
+
+ .block-btn{
+     padding:.6rem .5rem;
+     width:90%;
+     background: #0d6efd;
+     color:white;
+     border: solid .1px #0d6efd;
+     border-radius:.3rem;
+ }
+
+ .block-btn:hover{
+     cursor: pointer;
+     opacity:80%;
+ }
